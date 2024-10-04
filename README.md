@@ -47,6 +47,17 @@ Follow these steps to set up the project on your local machine:
      OPENAI_API_KEY=your_api_key_here
      ```
 
+6. Alternatively, you can set up your OpenAI API key in the `local_rag.py` file:
+   - Open the `local_rag.py` file in your preferred text editor
+   - Locate the line where the OpenAI API key is set (usually near the top of the file)
+   - Replace the placeholder with your actual API key:
+     ```python
+     os.environ["OPENAI_API_KEY"] = "your_api_key_here"
+     ```
+   - Save the file
+
+Note: It's generally safer to use environment variables (as in step 5) rather than hardcoding the API key in your script. Only use this method for local development and never commit your API key to version control.
+
 ## Usage
 
 To run the project, follow these steps:
